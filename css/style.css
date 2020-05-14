@@ -5,15 +5,11 @@ Author URI: http://be.net/jesusSG
 Description: Eclipse is a single theme for photography portfolio.
 Version: 1.0*/
 
+
 @font-face {
 font-family: ProductSans;
 src: url('./assets/fonts/ProductSans-Regular.ttf') format('truetype');
 }
-
-@font-face {
-  font-family: ProductSansBold;
-  src: url('./assets/fonts/ProductSansBold.ttf') format('truetype');
-  }
 
 @font-face {
 font-family: RobotoBold;
@@ -44,13 +40,18 @@ src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
 }
 
 .sticky {
-  position: fixed;
+  position: fixed; /*Se arregla la pocisión, queda flotando*/
 }
 
 .no-bg {
   background-color: transparent !important;
-  position: fixed;
+  position: fixed; /*Se arregla la pocisión, queda flotando*/
 }
+
+/*.navbar-custom {
+  height: 4em;
+  padding: 1em 3em !important;
+}*/
 
 .navbar-nav{
   margin-left: 80%;
@@ -64,7 +65,9 @@ src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
 
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    background-color: #dadada !important;
+    /*background-color: #D1D1D1 !important;  /*add background-color to active links */
+    border-bottom: 4px solid #000;
+    background-color: transparent;
 }
 
 .navbar-footer .navbar-nav .nav-link {
@@ -76,6 +79,9 @@ src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
 .navbar-footer .nav-item.active .nav-link,
 .navbar-footer .nav-item:hover .nav-link {
     color: #94b3f8;
+    
+    /*border-bottom: 3px solid #304269;
+    /*background-color: #000;  add background-color to active links */
 }
 
 
@@ -132,20 +138,20 @@ src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
 .description {
   font-size: 16px;
   font-family: 'RobotoLight', sans-serif;
-  color: #545454;
+  color: #333333;
   padding: 0px;
   margin-bottom: 20px;
 }
 
 .title{
-  padding-top: 5px;
-  font-family: 'ProductSansBold', sans-serif;
-  color: #545454;
+  padding-top: 20px;
+  font-family: 'ProductSans', sans-serif;
+  color: #333333;
 
 }
 
 #about {
-  width: 200px;
+  padding-top: 4em;
   height: auto;
 }
 
@@ -186,8 +192,8 @@ src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
   padding: 10px 50px;
   color: #fff;
   border: 3px solid #fff;
-  background-image: -webkit-linear-gradient(30deg, #333333 50%, transparent 50%);
-  background-image: linear-gradient(30deg, #333333 50%, transparent 50%);
+  background-image: -webkit-linear-gradient(30deg, #000 50%, transparent 50%);
+  background-image: linear-gradient(30deg, #000 50%, transparent 50%);
   background-size: 500px;
   background-repeat: no-repeat;
   background-position: 0%;
@@ -206,53 +212,56 @@ textarea {
 }
 
 
-.filter.item .galery {
+.filter.item .gallery {
   display: inline-block;
 }
 
-.galery {
+.gallery {
+  /*box-shadow: 0 14px 28px rgba(0,0,0,0.05);*/
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   padding: 15px;
   margin-bottom: 40px;
   background-color: #fff;
 }
 
-.galery:after {
+.gallery:after {
   content: "";
   position: absolute;
   clear: both;
 }
 
-.galery-img {
+.gallery-img {
   width: 100%;
   height: auto;
   transition:transform 0.25s ease; /*Opcional WP*/
 }
 
-.galery a {
+.gallery a {
   color: #7f7e7e !important;
 }
 
 
-.galery-img:hover {
+.gallery-img:hover {
   -webkit-transform:scale(1.1);
     transform:scale(1.2);
 }
 
-.galery-title {
+.gallery-title {
   font-family: 'Roboto', sans-serif;
   color: #333333;
   padding-top: 8px;
   margin-bottom: 0px;
+  display: none;
 }
 
-.galery-p {
+.gallery-p {
   font-family: 'RobotoLight', sans-serif;
   color: #939393;
   padding-top: 0px;
   padding-left: 0px;
   padding-right: 0px;
   margin-bottom: 0px;
+  display: none;
 }
 
 
@@ -276,8 +285,8 @@ textarea {
 
 
 body {
-  background-color: #dadada !important;
-  color: #fff !important;
+  background-color: #fff !important;
+  color: #ffffff !important;
 }
 
 
@@ -297,7 +306,7 @@ p {
 
 .contact-social {
   font-family: 'RobotoBold', sans-serif;
-  color: #545454;
+  color: #333333;
 }
 
 .contact-social-link {
@@ -328,7 +337,7 @@ section {
 
 
 #mobile-nav-toggle {
-  color: #fff;
+  color: #343a40;
   position: fixed;
   right: 0;
   top: 0;
@@ -354,7 +363,7 @@ footer {
 }
 
 .web-footer {
-  background-color: #333333;
+  background-color: #000;
   color: #fff !important;
   bottom: 0 !important;
   font-family: 'Roboto', sans-serif;
@@ -382,7 +391,7 @@ footer {
 
 
 .input {
-  background-color: #F7F7F7;
+  background-color: #fff;
   border: 1px solid #D1D1D1;
   border-radius: 5px;
   padding: 4px 8px;
@@ -398,19 +407,19 @@ footer {
 
 
 #toggle-filter {
-  color: #656363;
+  color: #333333;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
 #toggle-filter:hover {
-  color: #555454;
+  color: #707070;
 }
 
 .btn-filter {
   padding: 8px;
-  background-color: #fff;
+  background-color: #e6e6e6;
   color: #343434;
   border-radius: 5px;
   border: none;
@@ -419,20 +428,14 @@ footer {
   margin-bottom: 10px;
 }
 
-.filter-container {
-  
-  margin-bottom: 20px;
-}
-
-
 .btn-filter:hover {
   padding: 8px;
-  background-color: #cecccc;
+  background-color: #D1D1D1;
   color: #343434;
 }
 
 .filter-active {
-  background-color: #cecccc;
+  background-color: #D1D1D1;
   color: #343434;
 }
 
