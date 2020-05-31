@@ -3,6 +3,7 @@ module.exports = {
   siteDescription: 'A starter project for Gridsome with Bootstrap and some other useful tools.',
   siteUrl: 'https://jesussg.gitlab.io/eclipse',
   pathPrefix: '/eclipse/',
+  outputDir: 'public',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
