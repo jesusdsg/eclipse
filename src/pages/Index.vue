@@ -2,7 +2,7 @@
   <Layout>
     <div class="row" id="gallery-filter">
       <div class="col-12 text-center">
-          <button id="toggle-filter" v-on:click="toggle = !toggle"><fa-icon icon="th-large" size="2x" aria-label="Toggle" /></button>
+          <button id="toggle-filter" aria-label="Toggle" v-on:click="toggle = !toggle"><fa-icon icon="th-large" size="2x" /></button>
       </div>
 
       <div class="col-12">
