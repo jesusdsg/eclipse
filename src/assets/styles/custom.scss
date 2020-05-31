@@ -1,0 +1,250 @@
+$theme-colors: (
+  blue: #007bff,
+  indigo: #6610f2,
+  purple: #6f42c1,
+  pink: #e83e8c,
+  red: #dc3545,
+  orange: #fd7e14,
+  yellow: #ffc107,
+  green: #28a745,
+  teal: #20c997,
+  cyan: #17a2b8,
+  white: #fff,
+  gray: #6c757d,
+  gray-dark: #343a40,
+
+  primary: #3BBA95,
+  secondary: #6c757d,
+  success: #28a745,
+  info: #17a2b8,
+  warning: #ffc107,
+  danger: #dc3545,
+  light: #f8f9fa,
+  dark: #343a40,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 640px,
+  lg: 992px,
+  xl: 1300px
+);
+
+/*Extended custom CSS*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+  transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+
+.gallery-title {
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+  padding-top: 8px;
+  margin-bottom: 0px;
+  display: none;
+}
+
+.gallery-p {
+  font-family: 'RobotoLight', sans-serif;
+  color: #939393;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  display: none;
+}
+
+
+.btn-black {
+  font-family: 'RobotoLight', sans-serif !important;
+  padding: 10px 40px !important;
+  color: #fff !important;
+  background-color: #000 !important;
+  border-color: #000 !important;
+  font-family: 'RobotoLight', sans-serif;
+  border-radius: 0px !important;
+  text-decoration: none;
+  margin-bottom: 2em;
+  @media (max-width: 460px)
+  {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.btn-black:hover {
+  color: #fff !important;
+  background-color: #252525 !important;
+  border-color: #252525 !important;
+  text-decoration: none !important;
+}
+
+.btn-to-top {
+  width: 60px;
+  height: 60px;
+  padding: 10px 16px;
+  border-radius: 50%;
+  font-size: 22px;
+  line-height: 22px;
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-contact {
+  margin-top: 20px;
+  padding-top: 50px;
+  font-family: 'RobotoLight', sans-serif;
+  padding: 10px 50px;
+  color: #fff;
+  border: 3px solid #fff;
+  background-image: -webkit-linear-gradient(30deg, #000 50%, transparent 50%);
+  background-image: linear-gradient(30deg, #000 50%, transparent 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+
+.btn-contact:hover {
+text-decoration: none;
+background-position: 100%;
+color: #333333;
+}
+
+#contact-text {
+  font-size: 20pt;
+}
+
+footer {
+  margin-top: 2em;
+}
+
+footer hr {
+  margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(239, 239, 239, 0.1);
+}
+
+.web-footer {
+  background-color: #000;
+  color: #fff !important;
+  bottom: 0 !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.web-footer .bottom {
+  padding: 30px 0;
+}
+
+.web-footer-content {
+  padding: 5px;
+  color: #fff;
+}
+
+.web-footer-social {
+  color: #fff;  
+  text-decoration: none;
+  padding: 5px;
+}
+
+.web-footer-social:hover {
+  color: #d5d5d5;  
+  text-decoration: none;
+}
+
+.input {
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 5px;
+  padding: 4px 8px;
+}
+
+.lg-input {
+  width: 100%;
+}
+
+.sm-input {
+  width: 49.5%;
+}
+
+.title{
+  padding-top: 20px;
+  font-family: 'Product sans', sans-serif;
+  color: #333333;
+  padding-bottom: 1em;
+}
+
+
+#toggle-filter {
+  color: #333333;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#toggle-filter:hover {
+  color: #707070;
+}
+
+.btn-filter {
+  padding: 8px;
+  background-color: #e6e6e6;
+  color: #343434;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-right: 1em;
+}
+
+.btn-filter:hover {
+  padding: 8px;
+  background-color: #D1D1D1;
+  color: #343434;
+}
+
+.btn-filter {
+  padding: 8px;
+  background-color: #e6e6e6;
+  color: #343434;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.btn-filter:hover {
+  padding: 8px;
+  background-color: #D1D1D1;
+  color: #343434;
+}
+
+.filter-active {
+  background-color: #D1D1D1;
+  color: #343434;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #adadad;
+}
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #333333; 
+}
