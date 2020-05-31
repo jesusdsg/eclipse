@@ -47,6 +47,12 @@ export default {
   color: #fff !important;
 }
 
+@media (max-width: 467px){
+    .btn-top {
+        right: 2em;    
+    }
+}
+
 body, html {
   height: 100%;
 }
