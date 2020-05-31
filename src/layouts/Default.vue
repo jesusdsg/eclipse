@@ -4,7 +4,7 @@
       <Header/>
       <slot/>
     </div>
-    <a href="#" id="btn-top" @click="$scrollTop" class="btn-top"><fa-icon icon="angle-up" size="1x" /></a>
+    <a href="#" id="btn-top" @click="$scrollTop" class="btn-top" aria-label="Back to top"><fa-icon icon="angle-up" size="1x" /></a>
     <Footer/>
   </div>
 </template>
@@ -30,7 +30,6 @@ export default {
 
 <style lang="scss">
 .btn-top {
-  display: none;
   width: 30px !important;
   height: 30px !important;
   padding: 4px 8px !important;
