@@ -9,6 +9,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.use(BootstrapVue)
   Vue.component('Layout', DefaultLayout)
   Vue.mixin(checkIfMobile)
+  head.htmlAttrs = { lang: 'en' }
 }
 
 
