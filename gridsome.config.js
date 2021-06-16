@@ -1,7 +1,7 @@
 module.exports = {
   siteName: 'Eclipse',
   siteDescription: 'A starter project for Gridsome with Bootstrap and some other useful tools.',
-  siteUrl: 'https://jesussg.gitlab.io/eclipse',
+  siteUrl: 'https://jesusdsg.github.io/eclipse',
   pathPrefix: '/eclipse/',
   outputDir: 'public',
   plugins: [
